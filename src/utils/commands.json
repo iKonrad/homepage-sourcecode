@@ -90,5 +90,17 @@
     "response": {
       "text": ["Feel free to get in touch on e-mail address: <a href='mailto:konrad@jarosinski.uk'>konrad@jarosinski.uk</a>"]
     }
+  },
+  {
+    "cmd": "hi",
+    "response": {
+      "text": ["Hello. Type 'help' for more commands."]
+    }
+  },
+  {
+    "cmd": "Hi",
+    "response": {
+      "text": ["Hello. Type 'help' for more commands."]
+    }
   }
 ]

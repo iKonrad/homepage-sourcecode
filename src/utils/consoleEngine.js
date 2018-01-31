@@ -8,7 +8,7 @@ if (typeof window !== 'undefined') {
   }
 
   window['openSource'] = () => {
-    const win = window.open('https://github.com/iKonrad/iKonrad.github.io', '_blank');
+    const win = window.open('https://github.com/iKonrad/homepage-sourcecode', '_blank');
     win.focus();
   }
 
