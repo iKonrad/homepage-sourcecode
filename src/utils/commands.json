@@ -96,11 +96,5 @@
     "response": {
       "text": ["Hello. Type 'help' for more commands."]
     }
-  },
-  {
-    "cmd": "Hi",
-    "response": {
-      "text": ["Hello. Type 'help' for more commands."]
-    }
   }
 ]

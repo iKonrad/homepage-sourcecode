@@ -19,12 +19,12 @@ class Console extends Component {
   async print(command) {
     const state = this.state;
 
-    state.history.push({text: [command]})
+    state.history.push({ text: [command] })
 
     if (command === 'clear') {
       state.history = [];
     } else {
-      const response = handleCommand(command);
+      const response = handleCommand(command.toLowerCase());
       await response.text.forEach(text => state.history.push({type: response.type, text}));
       if (state.history.length >= this.limit) {
         state.history = state.history.splice((state.history.length) - this.limit, state.history.length - 1);

@@ -626,7 +626,7 @@ pre tt:after {
 }
 
 html {
- background: url('/static/backg.jpg') center center;
+ background: url('/static/backg4.jpg') center center;
   background-size: cover;
 }
 
@@ -644,11 +644,11 @@ html {
   font-size: 45px;
   margin-top: 100px;
   font-family: 'Nunito', sans-serif;
-  color: white;
+  color: #283a5c;
 }
 
 .subtitle {
   font-family: 'Nunito', sans-serif;
-  color: white;
+  color: #3a4f6c;
   font-size: 24px;
 }
