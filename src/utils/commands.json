@@ -1,0 +1,94 @@
+[
+  {
+    "cmd": "help",
+    "response": {
+      "type": "info",
+      "text": [
+        "Welcome on my homepage.",
+        "Try one of these commands:",
+        "-------------",
+        "about - Who am I and what I do",
+        "projects - Projects that I've built",
+        "github - Find me on github",
+        "linkedin - My LinkedIn profile",
+        "source - Source code for this page",
+        "contact - Get in touch",
+        "clear - clear the window"
+      ]
+    }
+  },
+  {
+    "cmd": "test",
+    "response": {
+      "text": ["Usage: test [something]"]
+    },
+    "children": [
+      {
+        "cmd": "something",
+        "response": {
+          "text": ["this is testing something"]
+        }
+      }
+    ]
+  },
+  {
+    "cmd": "about",
+    "response": {
+      "text": [
+        "My name is Konrad, and I'm a passionate Front-end/UX web developer.",
+        "Mostly, I work with Node/ES6, React.js, and GraphQL, but",
+        "I also have experience with PHP (Symfony), Golang and C#.",
+        "In my free time, I spend my time with family and also building little",
+        " projects like this one."
+      ]
+    }
+  },
+  {
+    "cmd": "welcome",
+    "response": {
+      "text": [
+        "Hi, welcome on my homepage. Type 'help' to get a list of all available commands."
+      ]
+    }
+  },
+  {
+    "cmd": "projects",
+    "response": {
+      "text": [
+        "Here's a list of the projects that I've built over time:",
+        "<a href='https://typitap.com' target='_blank'>typitap</a> - online type racing game",
+        "<a href='https://github.com/iKonrad/gatsby-source-directus' target='_blank'>gatsby-source-directus</a> - a source plugin for gatsby and directus",
+        "messpace - online post-it note application",
+        "mailileo - random pen-friend finding platform",
+        "<a href='https://steamcommunity.com/sharedfiles/filedetails/?id=244656044' target='_blank'>river town</a> - 3D farming role play game"
+      ]
+    }
+  },
+  {
+    "cmd": "github",
+    "response": {
+      "text": [""]
+    },
+    "fn": "openGithub"
+  },
+  {
+    "cmd": "linkedin",
+    "response": {
+      "text": [""]
+    },
+    "fn": "openLinkedin"
+  },
+  {
+    "cmd": "source",
+    "response": {
+      "text": [""]
+    },
+    "fn": "openSource"
+  },
+  {
+    "cmd": "contact",
+    "response": {
+      "text": ["Feel free to get in touch on e-mail address: <a href='mailto:konrad@jarosinski.uk'>konrad@jarosinski.uk</a>"]
+    }
+  }
+]

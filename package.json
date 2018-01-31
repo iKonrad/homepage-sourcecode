@@ -1,0 +1,29 @@
+{
+  "name": "konrad-jarosinski-homepage",
+  "description": "Homepage",
+  "version": "1.0.0",
+  "author": "Konrad Jarosinski <konrad@jarosinski.uk>",
+  "dependencies": {
+    "gatsby": "^1.9.158",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "prop-types": "^15.6.0",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d public"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.10.2"
+  }
+}

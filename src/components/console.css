@@ -1,0 +1,129 @@
+.console {
+    top: 20px;
+    background-color: rgba(0,0,0,0.8);
+    display: inline-block;
+    width: 700px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    /* Sketch doesnt export gradient borders at this point */
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.50);
+    border-radius: 5px 5px 4px 4px;
+}
+
+.console__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    /* Toolbar: */
+    background-image: linear-gradient(-180deg, #E7E6E7 0%, #D2D1D2 100%);
+    /* Sketch doesnt export gradient borders at this point */
+    z-index: 50000;
+}
+
+.console__button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+}
+
+.console__button--close {
+    background-color: #FC605C;
+    border: 1px solid #DD4744;
+    left: 10px;
+}
+
+.console__button--min {
+    background-color: #FDBC40;
+    border: 1px solid #DC9F33;
+    left: 30px;
+}
+
+.console__button--max {
+    background-color: #34C749;
+    border: 1px solid #26AA34;
+    left: 50px;
+}
+
+.console__screen-wrapper {
+    height: 450px;
+}
+
+.console__screen {
+    padding: 10px;
+    overflow: hidden;
+    text-align: left;
+    height: 400px;
+    top: 30px;
+    position: absolute;
+}
+
+.console__line {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    color: white;
+}
+
+.console__line--error {
+    color: #DD4744;
+}
+
+.console__line--info {
+    color: #0194fa;
+}
+
+.console__line a {
+    color: #009bff;
+}
+
+
+.console__input {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+.console__input input {
+    background: transparent;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    color: white;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+.console__input:before {
+    content: "~";
+    color: white;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.console__input:focus, .console__input:active {
+    outline: none;
+    border: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: grey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: grey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: grey;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: grey;
+}
+
